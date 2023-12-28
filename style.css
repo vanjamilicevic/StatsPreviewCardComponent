@@ -17,6 +17,10 @@ body {
     margin: 0;
 }
 
+.mobile-backround {
+    display: none;
+}
+
 .main-container {
     display: flex;
     width: 1200px;
@@ -94,4 +98,84 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: hsla(0, 0%, 100%, 0.55);
+}
+
+/* --------------Media queries-------------- */
+
+@media only screen and (max-width: 1210px) {
+
+    body {
+        height: fit-content;
+        overflow: scroll;
+    }
+    
+    .mobile-backround {
+        display: block;
+        width: 100%;
+    }
+
+    .main-container {
+        flex-direction: column-reverse;
+        width: 60%;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .content-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .description-container {
+        text-align: center;
+        padding: 0;
+    }
+
+    .description {
+        margin-bottom: 40px;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .informations-box {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .companies-box,
+    .templates-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .main-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-container {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .content-section {
+        padding: 30px;
+        padding-top: 45px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .content-section {
+        padding: 15px;
+        padding-top: 40px;
+    }
 }
