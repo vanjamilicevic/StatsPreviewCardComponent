@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend Deca:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-family: "Lexend Deca";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    width: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content-section {
+    width: 50%;
+    background-color: #1B1937;
+    padding: 70px;
+}
+
+.title {
+    color: white;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 25px;
+}
+
+.description-container {
+    padding-right: 100px;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.55);
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+.informations-box {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.insights {
+    color: #AB5CDB;
+}
+
+.image-section {
+    background: url('images/image-header-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 50%;
+}
+
+.image-hero {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    opacity: 50%;
+}
+
+.number {
+    font-family: 'Inter';
+    font-size: 24px;
+    color: white;
+}
+
+.clasification-name {
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.55);
+}
